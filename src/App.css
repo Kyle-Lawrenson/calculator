@@ -1,3 +1,6 @@
+body{
+  background-color: #779ECB;
+}
 .centre {
   display: flex;
   flex-direction: column;
@@ -5,7 +8,7 @@
   align-items: center;
 }
 .inputBox {
-  border: 2px black solid;
+  border: 2px  solid;
   border-radius: 5px;
   width: 200px;
   height: 30px;
@@ -13,10 +16,13 @@
   justify-content: flex-end;
 }
 
+.input{
+  background-color: fuchsia;
+}
+
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
   box-shadow: 0 0 15px rgba(0, 255, 183, 0.5);
-  border: solid rgb(122, 249, 90);
 }
