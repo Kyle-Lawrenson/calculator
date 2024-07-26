@@ -16,10 +16,6 @@ body{
   justify-content: flex-end;
 }
 
-.input{
-  background-color: fuchsia;
-}
-
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
