@@ -12,3 +12,11 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  box-shadow: 0 0 15px rgba(0, 255, 183, 0.5);
+  border: solid rgb(122, 249, 90);
+}
