@@ -4,23 +4,37 @@ import './App.css'
 
 const App = () => {
   const [sum, setSum] = useState("")
-  const buttons = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "+", "*", "/", "="]
-  const handleClick = (bttn) => {
+  const buttons = ["7", "8", "9", "*", "4", "5", "6", "-", "1", "2", "3", "+", "/", "0", ".", "=", "c"]
 
-    console.log(bttn)
+  const handleClick = (btn) => {
+    if (btn === "=") { //Independant research try & catch
+      try {
+        const result = evaluate(sum)
+        setSum(result)
+      } catch {
+        setSum("ERROR!")
+      }
+
+    } else if (btn === "c") {
+      setSum("")
+    } else {
+      setSum((prevInput) => prevInput + btn)
+    }
   }
-  
+
   return (
     <div className="centre">
-      <h2>Kyle's Below Adverage Calculator</h2>
-      <h4 className="inputBox">{sum}</h4>
-      <div className="buttonWrap">
-        {buttons.map((button, index) => {
+      <div className='calc'>
+        <h2 id='name'>Kyle's Calculator</h2>
+        <h4 className="inputBox">{sum}</h4>
+        <div className="buttonContainor">
+          {buttons.map((button, index) => {
             return (
-              <button key={index} onClick={() => handleClick(button)} className="btn">{button}</button>
+              <button className="bttn" key={index} onClick={() => handleClick(button)}>{button}</button>
             )
           })
-        }
+          }
+        </div>
       </div>
     </div>
   )

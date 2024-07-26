@@ -1,24 +1,55 @@
 body{
   background-color: #779ECB;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
 }
+
+#name {
+  color: #c5eafc;
+  text-decoration: wavy underline;
+}
+
 .centre {
+  /* border: 2px black solid; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .inputBox {
-  border: 2px  solid;
+  background-color: white;
+  border: 2px black solid;
   border-radius: 5px;
   width: 200px;
   height: 30px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
-.buttons {
+.buttonContainor {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
-  box-shadow: 0 0 15px rgba(0, 255, 183, 0.5);
+  gap: 8px;
+}
+
+.bttn{
+  height: 40px;
+  width: 40px;
+  border:2px solid white;
+  border-radius: 20px;
+  background-color: #B8DDEF;
+}
+
+.bttn:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.calc {
+  background-color: grey;
+  border:10px grey solid ;
+  border-radius: 10%;
 }
