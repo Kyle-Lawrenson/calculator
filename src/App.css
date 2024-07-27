@@ -35,7 +35,7 @@ body{
   gap: 8px;
 }
 
-.bttn{
+.btn{
   height: 40px;
   width: 40px;
   border:2px solid white;
@@ -43,9 +43,18 @@ body{
   background-color: #B8DDEF;
 }
 
-.bttn:hover {
+.btn:hover {
   background-color: white;
   cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+}
+
+.btn-red:hover {
+  background-color: darkred;
 }
 
 .calc {

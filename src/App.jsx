@@ -29,8 +29,9 @@ const App = () => {
         <h4 className="inputBox">{sum}</h4>
         <div className="buttonContainor">
           {buttons.map((button, index) => {
+            const btn = button === "c" ? "btn btn-red" : "btn";
             return (
-              <button className="bttn" key={index} onClick={() => handleClick(button)}>{button}</button>
+              <button className="btn" key={index} onClick={() => handleClick(button)}>{button}</button>
             )
           })
           }
