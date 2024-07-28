@@ -35,6 +35,16 @@ body{
   gap: 8px;
 }
 
+/* attempted to make c button red */
+/* .cBtn {
+  background-color: red;
+  color: white;
+}
+
+.cBtn:hover {
+  background-color: darkred;
+} */
+
 .btn{
   height: 40px;
   width: 40px;
@@ -46,15 +56,6 @@ body{
 .btn:hover {
   background-color: white;
   cursor: pointer;
-}
-
-.btn-red {
-  background-color: red;
-  color: white;
-}
-
-.btn-red:hover {
-  background-color: darkred;
 }
 
 .calc {
